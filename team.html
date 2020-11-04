@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PT KAYUSOJA REKSA PRIMA</title>
+  </head>
+
+  <body>
+    <div class="page">
+    <div class="navbar-fixed">
+        <nav class="transparent">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img src="img/logo-icon.png" alt=""><h5 class="light-green-text text-darken-4">PT KAYUSOJA REKSA PRIMA</h5></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Utama</a></li>
+              <li><a href="about.html" class="active">Tentang</a></li>
+              <li><a href="team.html">Tim</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="jumbotron">
+      <div class="element"></div>
+      <div class="container">
+        <h1 class="slogan">Trust & <br> <span class="light-green-text text-darken-3">Knowledge</span> </h1>
+        <p class="aboutDesc white-text">
+          PT. Kayusoja Reksa Prima didirikan untuk melembagakan kiprah para insinyur
+          yang memiliki kompetensi sebagai tenaga ahli jasa konsultansi kedalam
+          sebuah institusi bisnis.
+        </p>
+        <a href="about.html" class="waves-effect waves-light btn btn-primary light-green darken-1">Lihat Detail</a>
+      </div>
+    </div>
+  </div>
+    <div id="loading">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        function onReady(callback) {
+        var intervalId = window.setInterval(function() {
+          if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalId);
+            callback.call(this);
+          }
+        }, 1000);
+      }
+
+      function setVisible(selector, visible) {
+        document.querySelector(selector).style.display = visible ? 'block' : 'none';
+      }
+
+      onReady(function() {
+        setVisible('.page', true);
+        setVisible('#loading', false);
+      });
+
+
+      const sideNav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+
+      const slider = document.querySelectorAll('.slider');
+      M.Slider.init(slider, {
+          indicators: false,
+          duration: 600,
+          interval: 12000
+      });
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+    </script>
+  </body>
+</html>
