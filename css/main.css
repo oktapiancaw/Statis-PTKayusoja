@@ -237,7 +237,7 @@ hr.divided {
   width: 100%;
   min-height: 100vh !important;
   height: 100vh !important;
-  background-image: url("../img/Main.jpg");
+  background-image: url("../img/main.jpg");
   background-position: center;
   background-size: cover;
 }
