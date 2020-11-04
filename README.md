@@ -27,3 +27,4 @@ Design web ini dibuat hanya untuk melakukan tugas dan latihan semata
 Oktapian - [@oxtcode00](https://www.instagram.com/oxtcode00) - oxtcode00@gmail.com.com
 
 Project Link: [https://github.com/oktapiancaw/Statis-PTKayusoja/](https://github.com/oktapiancaw/Statis-PTKayusoja/)
+Demo Link: [https://oktapiancaw.github.io/Statis-PTKayusoja/](https://oktapiancaw.github.io/Statis-PTKayusoja/)
