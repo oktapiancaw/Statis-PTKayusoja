@@ -1,89 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--Import Google Icon Font-->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PT KAYUSOJA REKSA PRIMA</title>
-  </head>
+<head>
+  <!--Import Google Icon Font-->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-  <body>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT KAYUSOJA REKSA PRIMA</title>
+</head>
+
+<body>
   <div class="page">
     <div class="navbar-fixed">
-        <nav class="transparent" id="navbar">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo"><img src="img/logo-icon.png" alt=""><h5 class="white-text">PT KAYUSOJA REKSA PRIMA</h5></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="index.html">Utama</a></li>
-              <li><a href="about.html">Tentang</a></li>
-              <li><a href="team.html">Tim</a></li>
-              <li><a href="#" class="active">Portfolio</a></li>
-            </ul>
-          </div>
-        </nav>
+      <nav class="transparent" id="navbar">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"><img src="img/icon/logo-icon.png" alt="">
+            <h5 class="white-text">PT KAYUSOJA REKSA PRIMA</h5>
+          </a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i class='bx bx-menu-alt-right'></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="team.html">Tim</a></li>
+            <li><a href="#" class="active">Portfolio</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Utama</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="team.html">Tim</a></li>
+      <li><a href="#" class="active">Portfolio</a></li>
+    </ul>
     <div class="parallax-container main-parallax">
-      <div class="parallax"><img src="img/main2.png"></div>
-      <div class="element"></div>
+      <div class="parallax"><img src="img/main-dark.png"></div>
       <div class="container">
-          <div class="box">
-            <h3 class="white-text">Keahlian Kami</h3>
-            <hr>
-          </div>
+        <div class="box">
+          <h3 class="white-text">Keahlian Kami</h3>
+          <hr>
+        </div>
       </div>
     </div>
     <section class="keahlian" id="keahlian">
-        <div class="row">
-            <div class="col m4">
-                <img class="gambar-keahlian" src="img/Marine.jpg" alt="">
-                <h5 class="white-text center">Marine and Fisheries</h5>
-                <div class="desc-keahlian center white-text">
-                  <p>Pengembangan Kawasan Minapolitan, Penyusunan Zonasi Wilayah Pesisir dan Pulau-Pulau Kecil, Mitigasi Pencemaran Laut.</p>
-                  <a href="#marine" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
-                </div>
-              </div>
-            <div class="col m4">
-                <img class="gambar-keahlian" src="img/environmental.jpg" alt="">
-                <h5 class="white-text center">Environmental Studies</h5>
-                <div class="desc-keahlian center white-text">
-                  <p>Monitoring Kualitas Lingkunga, Mitigasi Perubahan Iklim dan Pencemaran, Kajian Kerusakan Sumber Daya Alam Akibat Produksi Biomassa.</p>
-                  <a href="#envorimental" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
-                </div>
-              </div>
-            <div class="col m4">
-                <img class="gambar-keahlian" src="img/Pemetaan.jpg" alt="">
-                <h5 class="white-text center">Survey dan Pemetaan</h5>
-                <div class="desc-keahlian center white-text">
-                  <p>Pengembangan Aplikasi GIS dalam Perencanaan dan Tata Ruang, Pemetaan Pesawat Tanpa Awak (Drone).</p>
-                  <a href="#pemetaan" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col m4">
+          <img class="gambar-keahlian" src="img/assets/Marine.jpg" alt="">
+          <h5 class="white-text center">Marine and Fisheries</h5>
+          <div class="desc-keahlian center white-text">
+            <p>Pengembangan Kawasan Minapolitan, Penyusunan Zonasi Wilayah Pesisir dan Pulau-Pulau Kecil, Mitigasi
+              Pencemaran Laut.</p>
+            <a href="#marine" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
+          </div>
         </div>
-        <div class="row">
-            <div class="col m6">
-                <img class="gambar-keahlian" src="img/management.jpg" alt="">
-                <h5 class="white-text center">Ekonomi dan Manajemen</h5>
-                <div class="desc-keahlian center white-text">
-                  <p>Impelementasi Sistem Manajemen Mutu, Survey Kepuasan Pelanggan, Analisis Kelayakan Finansial, Analisis Tata Niaga,</p>
-                  <a href="#manajemen" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
-                </div>
-              </div>
-            <div class="col m6">
-                <img class="gambar-keahlian" src="img/forestry.jpg" alt="">
-                <h5 class="white-text center">Agriculture and Forestry</h5>
-                <div class="desc-keahlian center white-text">
-                  <p>Kajian Pengembangan Infrastruktur Pertanian, Kajian dan Penerapan Sistem Konservasi Tanah dan Air, Pengembangan dan Pemberdayaan Petani,</p>
-                  <a href="#forestry" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
-                </div>
-              </div>
+        <div class="col m4">
+          <img class="gambar-keahlian" src="img/assets/environmental.jpg" alt="">
+          <h5 class="white-text center">Environmental Studies</h5>
+          <div class="desc-keahlian center white-text">
+            <p>Monitoring Kualitas Lingkunga, Mitigasi Perubahan Iklim dan Pencemaran, Kajian Kerusakan Sumber Daya Alam
+              Akibat Produksi Biomassa.</p>
+            <a href="#envorimental"
+              class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
+          </div>
         </div>
+        <div class="col m4">
+          <img class="gambar-keahlian" src="img/assets/Pemetaan.jpg" alt="">
+          <h5 class="white-text center">Survey dan Pemetaan</h5>
+          <div class="desc-keahlian center white-text">
+            <p>Pengembangan Aplikasi GIS dalam Perencanaan dan Tata Ruang, Pemetaan Pesawat Tanpa Awak (Drone).</p>
+            <a href="#pemetaan" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m6">
+          <img class="gambar-keahlian" src="img/assets/management.jpg" alt="">
+          <h5 class="white-text center">Ekonomi dan Manajemen</h5>
+          <div class="desc-keahlian center white-text">
+            <p>Impelementasi Sistem Manajemen Mutu, Survey Kepuasan Pelanggan, Analisis Kelayakan Finansial, Analisis
+              Tata Niaga,</p>
+            <a href="#manajemen" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="col m6">
+          <img class="gambar-keahlian" src="img/assets/forestry.jpg" alt="">
+          <h5 class="white-text center">Agriculture and Forestry</h5>
+          <div class="desc-keahlian center white-text">
+            <p>Kajian Pengembangan Infrastruktur Pertanian, Kajian dan Penerapan Sistem Konservasi Tanah dan Air,
+              Pengembangan dan Pemberdayaan Petani,</p>
+            <a href="#forestry" class="waves-effect waves-light btn btn-primary light-green darken-1">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="pengalaman grey lighten-2" id="pengalaman">
       <div class="container">
@@ -91,7 +105,7 @@
           <div class="card-content">
             <div class="row scrollspy" id="marine">
               <div class="col m6">
-                <img src="img/Marine.jpg" alt="" class="gambar-pengalaman">
+                <img src="img/assets/Marine.jpg" alt="" class="gambar-pengalaman">
               </div>
               <div class="col m6">
                 <h5 class="light-green darken-4 white-text">Marine and Fisheries</h5>
@@ -103,7 +117,7 @@
                   <li>Inventarisasi Potensi Pesisir dan PulauPulau Kecil.</li>
                   <li>Konservasi Ekosistem Mangrove, Terumbu
                     Karang, dan Padang Lamun.
-                    </li>
+                  </li>
                   <li>Analisis Kelayakan Project Kelautan dan
                     Perikanan.</li>
                   <li>Pemberdayaan Nelayan dan Masyarakat
@@ -113,12 +127,15 @@
             </div>
             <div class="row scrollspy" id="envorimental">
               <div class="col m6">
+                <img src="img/assets/environmental.jpg" alt="" class="gambar-pengalaman">
+              </div>
+              <div class="col m6">
                 <h5 class="light-green darken-4 white-text">Envorimental Studies</h5>
                 <ul>
                   <li>Monitoring Kualitas Lingkungan.</li>
                   <li>Mitigasi Perubahan Iklim dan
                     Pencemaran.
-                    </li>
+                  </li>
                   <li>Kajian Kerusakan Sumber Daya Alam
                     Akibat Produksi Biomassa.</li>
                   <li>Konservasi Keanakeragaman Hayati.</li>
@@ -131,13 +148,10 @@
                   <li>Kajian Lingkungan Hidup Strategis.</li>
                 </ul>
               </div>
-              <div class="col m6">
-                <img src="img/environmental.jpg" alt="" class="gambar-pengalaman">
-              </div>
             </div>
             <div class="row scrollspy" id="pemetaaan">
               <div class="col m6">
-                <img src="img/Pemetaan.jpg" alt="" class="gambar-pengalaman">
+                <img src="img/assets/Pemetaan.jpg" alt="" class="gambar-pengalaman">
               </div>
               <div class="col m6">
                 <h5 class="light-green darken-4 white-text">Survey dan Pemetaan</h5>
@@ -148,14 +162,17 @@
                     (Drone).</li>
                   <li>Survey, Investigasi dan Desain
                     Pengelolaan Sumber Daya Alam.
-                    </li>
+                  </li>
                   <li>Interpretasi Citra Satelit alam
                     Pengelolaan Sumberdaya.
-                    </li>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="row scrollspy" id="manajemen">
+              <div class="col m6">
+                <img src="img/assets/management.jpg" alt="" class="gambar-pengalaman">
+              </div>
               <div class="col m6">
                 <h5 class="light-green darken-4 white-text">Ekonomi dan Manajemen</h5>
                 <ul>
@@ -168,13 +185,10 @@
                   <li>Pengembangan Klaster Industri.</li>
                 </ul>
               </div>
-              <div class="col m6">
-                <img src="img/management.jpg" alt="" class="gambar-pengalaman">
-              </div>
             </div>
             <div class="row scrollspy" id="forestry">
               <div class="col m6">
-                <img src="img/forestry.jpg" alt="" class="gambar-pengalaman">
+                <img src="img/assets/forestry.jpg" alt="" class="gambar-pengalaman">
               </div>
               <div class="col m6">
                 <h5 class="light-green darken-4 white-text">Agriculture and Forestry</h5>
@@ -219,6 +233,51 @@
         </div>
       </div>
     </section>
+    <div class="parallax-container portfolio">
+      <div class="parallax"><img src="img/Team.png"></div>
+      <div class="container white-text">
+        <h4 class="center">Portofolio Perusahaan</h4>
+        <ul>
+          <li>Penyusunan Rancangan Teknik Penanaman
+            Dalam Rangka Rehabilitasi Daerah Aliran
+            Sungai.</li>
+            <li>Desain Tapak Kawasan Konservasi Taman
+              Hutan Raya Gunung Kunci Palasari.
+              </li>
+            <li>Penyusunan Masterplan Kawasan Minapolitan.</li>
+            <li>Kajian Teknis Unit Pengolahan Hasil Hutan
+              Cirebon.</li>
+            <li>Implementasi ISO/IEC 17025-2017 dan
+              Persiapan Akreditasi Pada Dinas Lingkungan
+              Hidup Kab. Garut.</li>
+            <li>Identikasi dan Rona Awal Perhitungan Karbon
+              (REDD+) Dengan Fokus Pada Area Forest
+              Programme II Site 2 Pada Balai Pengelolaan
+              DASHL Batanghari Jambi.
+              </li>
+              <li>Pengawasan dan Penilaian (WASLAI)
+                Pelaksanaan Pekerjaan Rehabilitasi Hutan
+                (RHL) Meliputi pembuatan Agroforestry dan
+                Reboisasi Tahun Pertama (PO) Tahun Kedua
+                (P1) dan Tahun ketiga (P2) Tahun 2019 Dalam
+                Rangka Pelaksanaan Forest Programme II
+                (REDD+).
+                </li>
+              <li>Perancangan Dampak Perubahan Iklim Dan
+                Bahan Tercemar Terhadap Kelestarian
+                Pulau-Pulau Kecil.
+                </li>
+              <li>Rencana Induk Pengelolaan Keanekaragaman
+                Hayati.</li>
+              <li>Kajian Daya Dukung Daya Tampung.
+              </li>
+              <li>Perancangan Pemulihan Ekosistem Padang
+                Lamun Pada Kawasan Konservasi Perairan
+                Kabupaten Indramayu Berbasis Teknologi
+                Transplantasi.</li>
+        </ul>
+      </div>
+    </div>
     <section class="footer grey darken-4" id="footer">
       <div class="container">
         <div class="row">
@@ -226,57 +285,57 @@
             <h5 class="white-text">Lokasi</h5>
             <hr>
             <p class="white-text">Buah Batu Commercial Area (BBCA) Jl. Terusan Buah Batu Kota Bandung</p>
-            <img src="img/maps.png" alt="">
+            <img src="img/assets/maps.png" alt="">
           </div>
           <div class="col m4">
             <h5 class="white-text">Kegiatan Kami</h5>
             <hr>
             <div class="row kegiatan">
               <div class="col m6 l4">
-                <img src="img/Marine.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/Marine.jpg" alt="" class="footerKegiatan">
               </div>
               <div class="col m6 l4">
-                <img src="img/Forest.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/Forest.jpg" alt="" class="footerKegiatan">
               </div>
               <div class="col m6 l4">
-                <img src="img/forestry.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/forestry.jpg" alt="" class="footerKegiatan">
               </div>
               <div class="col m6 l4">
-                <img src="img/agricultural.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/agricultural.jpg" alt="" class="footerKegiatan">
               </div>
               <div class="col m6 l4">
-                <img src="img/Pemetaan.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/Pemetaan.jpg" alt="" class="footerKegiatan">
               </div>
               <div class="col m6 l4">
-                <img src="img/Marine.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/Marine.jpg" alt="" class="footerKegiatan">
               </div>
               <div class="col m6 l4">
-                <img src="img/Marine.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/Marine.jpg" alt="" class="footerKegiatan">
               </div>
               <div class="col m6 l4">
-                <img src="img/Marine.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/Marine.jpg" alt="" class="footerKegiatan">
               </div>
               <div class="col m6 l4">
-                <img src="img/Marine.jpg" alt="" class="footerKegiatan">
+                <img src="img/assets/Marine.jpg" alt="" class="footerKegiatan">
               </div>
             </div>
           </div>
           <div class="col m4" id="sosmed">
             <h5 class="white-text">Kontak Kami</h5>
             <hr>
-            <p class="white-text"><i class='bx bxs-phone' ></i> +62812345678</p>
-            <p class="white-text"><i class='bx bx-envelope' ></i> Kayusoja04@gmail.com</p>
+            <p class="white-text"><i class='bx bxs-phone'></i> +62812345678</p>
+            <p class="white-text"><i class='bx bx-envelope'></i> Kayusoja04@gmail.com</p>
             <a class="white-text" href="#">
               <i class='bx bxl-facebook'></i>
             </a>
             <a class="white-text" href="#">
-              <i class='bx bxl-instagram' ></i>
+              <i class='bx bxl-instagram'></i>
             </a>
             <a class="white-text" href="#">
-              <i class='bx bxl-twitter' ></i>
+              <i class='bx bxl-twitter'></i>
             </a>
             <a class="white-text" href="#">
-              <i class='bx bxl-linkedin' ></i>
+              <i class='bx bxl-linkedin'></i>
             </a>
           </div>
         </div>
@@ -289,62 +348,65 @@
     </section>
 
   </div>
-    <div id="loading">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      function onReady(callback) {
-        var intervalId = window.setInterval(function() {
-          if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalId);
-            callback.call(this);
-          }
-        }, 4000);
-      }
-
-      function setVisible(selector, visible) {
-        document.querySelector(selector).style.display = visible ? 'block' : 'none';
-      }
-
-      onReady(function() {
-        setVisible('.page', true);
-        setVisible('#loading', false);
-      });
-
-      const parallax = document.querySelectorAll('.parallax');
-      M.Parallax.init(parallax);
-
-
-      const sideNav = document.querySelectorAll('.sidenav');
-      M.Sidenav.init(sideNav);
-
-      const detail = document.querySelectorAll('.scrollspy');
-      M.ScrollSpy.init(detail, {
-        scrollOffset: 50,
-        activeClass: ''
-      });
-
-      const footerImg = document.querySelectorAll('.footerKegiatan');
-      M.Materialbox.init(footerImg);
-      
-      window.onscroll = function() {myFunction()};
-
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop + 10;
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
+  <div id="loading">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    function onReady(callback) {
+      var intervalId = window.setInterval(function () {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+          window.clearInterval(intervalId);
+          callback.call(this);
         }
+      }, 4000);
+    }
+
+    function setVisible(selector, visible) {
+      document.querySelector(selector).style.display = visible ? 'block' : 'none';
+    }
+
+    onReady(function () {
+      setVisible('.page', true);
+      setVisible('#loading', false);
+    });
+
+    const parallax = document.querySelectorAll('.parallax');
+    M.Parallax.init(parallax);
+
+
+    const sideNav = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sideNav);
+
+    const detail = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(detail, {
+      scrollOffset: 50,
+      activeClass: ''
+    });
+
+    const footerImg = document.querySelectorAll('.footerKegiatan');
+    M.Materialbox.init(footerImg);
+
+    window.onscroll = function () {
+      myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop + 10;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>

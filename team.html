@@ -16,28 +16,56 @@
   <body>
     <div class="page">
     <div class="navbar-fixed">
-        <nav class="transparent">
+        <nav class="transparent sticky">
           <div class="nav-wrapper">
-            <a href="#!" class="brand-logo"><img src="img/logo-icon.png" alt=""><h5 class="light-green-text text-darken-4">PT KAYUSOJA REKSA PRIMA</h5></a>
+            <a href="#!" class="brand-logo"><img src="img/icon/logo-icon.png" alt=""><h5 class="light-green-text text-darken-4">PT KAYUSOJA REKSA PRIMA</h5></a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i class='bx bx-menu-alt-right'></i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#">Utama</a></li>
-              <li><a href="about.html" class="active">Tentang</a></li>
-              <li><a href="team.html">Tim</a></li>
+              <li><a href="index.html">Utama</a></li>
+              <li><a href="about.html">Tentang</a></li>
+              <li><a href="#">Tim</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
           </div>
         </nav>
     </div>
-    <div class="jumbotron">
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html" class="active">Utama</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="#" class="active">Tim</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+    <div class="jumbotron2">
       <div class="element"></div>
       <div class="container">
-        <h1 class="slogan">Trust & <br> <span class="light-green-text text-darken-3">Knowledge</span> </h1>
-        <p class="aboutDesc white-text">
-          PT. Kayusoja Reksa Prima didirikan untuk melembagakan kiprah para insinyur
-          yang memiliki kompetensi sebagai tenaga ahli jasa konsultansi kedalam
-          sebuah institusi bisnis.
-        </p>
-        <a href="about.html" class="waves-effect waves-light btn btn-primary light-green darken-1">Lihat Detail</a>
+        <div class="row">
+          <h3 class="center white-text">Team Kami</h3>
+          <div class="col" style="width: 100%;">
+            <div class="carousel">
+              <div class="carousel-item center">
+                <img src="img/assets/default.png" alt="">
+                <div class="element"></div>
+                <h6>Ir., Yudi Rismayadi, M.Si., IPU.</h6>
+                <p>Direktur Utama</p>
+              </div>
+              <div class="carousel-item">
+
+              </div>
+              <div class="carousel-item">
+
+              </div>
+              <div class="carousel-item">
+
+              </div>
+              <div class="carousel-item">
+
+              </div>
+              <div class="carousel-item">
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -67,18 +95,13 @@
       onReady(function() {
         setVisible('.page', true);
         setVisible('#loading', false);
+        const slider = document.querySelectorAll('.carousel');
+        M.Carousel.init(slider);
       });
-
-
       const sideNav = document.querySelectorAll('.sidenav');
       M.Sidenav.init(sideNav);
 
-      const slider = document.querySelectorAll('.slider');
-      M.Slider.init(slider, {
-          indicators: false,
-          duration: 600,
-          interval: 12000
-      });
+      
 
       const parallax = document.querySelectorAll('.parallax');
       M.Parallax.init(parallax);

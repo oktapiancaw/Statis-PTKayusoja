@@ -197,11 +197,15 @@ body {
   font-size: 16px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: boldHeader;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5,
+h6 {
   margin-top: 10px;
   font-family: Header;
 }
@@ -237,19 +241,9 @@ hr.divided {
   width: 100%;
   min-height: 100vh !important;
   height: 100vh !important;
-  background-image: url("../img/main.jpg");
+  background-image: url("../img/main-dark.png");
   background-position: center;
   background-size: cover;
-}
-
-.jumbotron::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: radial-gradient(rgba(128, 56, 56, 0), rgba(0, 0, 0, 0.4) 20%, black);
 }
 
 .jumbotron .element {
@@ -279,6 +273,51 @@ hr.divided {
 .jumbotron .container .aboutDesc {
   font-family: texts;
   font-size: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.jumbotron2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -64px;
+  position: relative;
+  width: 100%;
+  min-height: 100vh !important;
+  height: 100vh !important;
+  background-image: url("../img/main2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.jumbotron2 .carousel img {
+  width: 320px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.jumbotron2 .carousel .element {
+  margin: -7px 0;
+  width: 40%;
+  height: 4px;
+  background-color: #33691e;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.jumbotron2 .carousel-item {
+  height: 420px;
+  width: 320px;
+  background: #fff;
 }
 
 .main-parallax {
@@ -322,7 +361,7 @@ hr.divided {
 }
 
 .service {
-  height: 65vh;
+  height: 90vh;
 }
 
 .service .parallax img {
@@ -331,7 +370,7 @@ hr.divided {
 }
 
 .service .col:nth-child(1) {
-  height: 65vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,8 +395,21 @@ hr.divided {
   border: none !important;
 }
 
+.service .collapsible li {
+  font-family: texts;
+  font-size: 16px;
+}
+
+.service .collapsible li span {
+  font-size: 14px;
+}
+
 .service .collapsible-header, .service .collapsible-body {
   border-bottom: none !important;
+}
+
+.service .collapsible-body {
+  padding: 1.2rem;
 }
 
 .about {
@@ -391,7 +443,7 @@ hr.divided {
 }
 
 .goal .goal-box:nth-child(1) .col:nth-child(1) {
-  background: url("../img/Mountain-1.jpg");
+  background: url("../img/assets/Mountain-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -425,7 +477,7 @@ hr.divided {
 }
 
 .goal .goal-box:nth-child(2) .col:nth-child(2) {
-  background: url("../img/Mountain-3.jpg");
+  background: url("../img/assets/Mountain-2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -576,8 +628,18 @@ hr.divided {
   left: -40px;
 }
 
+.pengalaman .card .row:nth-child(odd) .col {
+  float: left;
+}
+
 .pengalaman .card .row:nth-child(odd) .col:nth-child(1) {
   padding: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .pengalaman .card .row:nth-child(odd) .col:nth-child(1) {
+    display: none;
+  }
 }
 
 .pengalaman .card .row:nth-child(odd) .col:nth-child(2) {
@@ -589,12 +651,23 @@ hr.divided {
   right: -40px;
 }
 
+.pengalaman .card .row:nth-child(even) .col {
+  float: right;
+}
+
 .pengalaman .card .row:nth-child(even) .col:nth-child(1) {
-  padding: 1.2rem !important;
+  padding: 0 !important;
 }
 
 .pengalaman .card .row:nth-child(even) .col:nth-child(2) {
-  padding: 0 !important;
+  padding: 1.2rem !important;
+}
+
+@media (max-width: 600px) {
+  .pengalaman .card .row:nth-child(even) .col:nth-child(2) {
+    float: left !important;
+    width: 100%;
+  }
 }
 
 .pengalaman .card .row:nth-child(5) .col {
@@ -606,22 +679,34 @@ hr.divided {
   height: 320px;
 }
 
-.pengalaman .card .col .gambar-pengalaman {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+@media (min-width: 600px) {
+  .pengalaman .card .col .gambar-pengalaman {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .pengalaman .card .col h5 {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 5px 20px;
+  }
 }
 
-.pengalaman .card .col h5 {
-  z-index: 2;
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  padding: 5px 20px;
+@media (max-width: 600px) {
+  .pengalaman .card .col .gambar-pengalaman {
+    display: none;
+  }
+  .pengalaman .card .col h5 {
+    left: 0 !important;
+    right: 0 !important;
+    text-align: center !important;
+  }
 }
 
 .pengalaman .card .col ul {
@@ -633,5 +718,27 @@ hr.divided {
   list-style-type: decimal;
   font-family: texts;
   font-size: 16px;
+}
+
+.portfolio {
+  min-height: 60vh;
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    min-height: 120vh;
+  }
+}
+
+.portfolio img {
+  -webkit-filter: grayscale(0.3);
+          filter: grayscale(0.3);
+}
+
+.portfolio ul li {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Texts';
+  list-style: decimal-leading-zero;
 }
 /*# sourceMappingURL=main.css.map */
