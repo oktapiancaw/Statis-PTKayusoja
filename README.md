@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/oktapiancaw/Statis-PTKayusoja/">
-    <img src="img/logo-icon.png" alt="Logo" width="120" height="120">
+    <img src="img/icon/logo-icon.png" alt="Logo" width="120" height="120">
   </a>
 
   <p align="center">Company Profile</p>
