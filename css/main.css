@@ -131,6 +131,15 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .navbar-fixed nav {
+    padding: 0 !important;
+  }
+  .navbar-fixed h5 {
+    font-size: 18px;
+  }
+}
+
 .navbar-fixed nav {
   -webkit-transition: 400ms;
   transition: 400ms;
@@ -146,6 +155,7 @@ body {
   background-color: #fff !important;
 }
 
+.navbar-fixed nav.sticky i,
 .navbar-fixed nav.sticky h5 {
   color: #33691e !important;
 }
@@ -258,6 +268,12 @@ hr.divided {
           clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
 }
 
+@media (max-width: 600px) {
+  .jumbotron .element {
+    display: none;
+  }
+}
+
 .jumbotron .container {
   position: absolute;
   left: 240px;
@@ -274,6 +290,12 @@ hr.divided {
   font-family: texts;
   font-size: 16px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 600px) {
+  .jumbotron .container {
+    left: 10px !important;
+  }
 }
 
 .jumbotron2 {
@@ -364,6 +386,12 @@ hr.divided {
   height: 90vh;
 }
 
+@media (max-width: 600px) {
+  .service {
+    height: 100vh;
+  }
+}
+
 .service .parallax img {
   -webkit-filter: grayscale(1) brightness(1.2);
           filter: grayscale(1) brightness(1.2);
@@ -382,6 +410,14 @@ hr.divided {
           justify-content: center;
 }
 
+@media (max-width: 600px) {
+  .service .col:nth-child(1) {
+    height: 20vh;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .service .col:nth-child(1) img {
   width: 300px;
   height: 300px;
@@ -389,6 +425,13 @@ hr.divided {
      object-fit: cover;
   -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 600px) {
+  .service .col:nth-child(1) img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .service .collapsible {
@@ -448,6 +491,12 @@ hr.divided {
   background-size: cover;
 }
 
+@media (max-width: 600px) {
+  .goal .goal-box:nth-child(1) .col:nth-child(1) {
+    display: none;
+  }
+}
+
 .goal .goal-box:nth-child(1) .col:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,6 +529,12 @@ hr.divided {
   background: url("../img/assets/Mountain-2.jpg");
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .goal .goal-box:nth-child(2) .col:nth-child(2) {
+    display: none;
+  }
 }
 
 .footer {
@@ -674,6 +729,12 @@ hr.divided {
   height: 520px;
 }
 
+@media (max-width: 600px) {
+  .pengalaman .card .row:nth-child(5) .col {
+    height: auto !important;
+  }
+}
+
 .pengalaman .card .col {
   position: relative;
   height: 320px;
@@ -699,6 +760,9 @@ hr.divided {
 }
 
 @media (max-width: 600px) {
+  .pengalaman .card .col {
+    height: auto !important;
+  }
   .pengalaman .card .col .gambar-pengalaman {
     display: none;
   }
@@ -726,7 +790,8 @@ hr.divided {
 
 @media (max-width: 600px) {
   .portfolio {
-    min-height: 120vh;
+    min-height: 150vh;
+    padding: 0 10px;
   }
 }
 
@@ -740,5 +805,11 @@ hr.divided {
   line-height: 28px;
   font-family: 'Texts';
   list-style: decimal-leading-zero;
+}
+
+@media (max-width: 600px) {
+  .portfolio ul li {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
