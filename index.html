@@ -22,32 +22,30 @@
             <a href="#!" class="brand-logo"><img src="img/icon/logo-icon.png" alt=""><h5 class="light-green-text text-darken-4">PT KAYUSOJA REKSA PRIMA</h5></a>
             <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i class='bx bx-menu-alt-right'></i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#" onclick="setLanguage('ina')">Indo</a></li>
-              <li><a href="#" onclick="setLanguage('eng')">Engl</a></li>
-              <li><a id="homeNav" href="#">Utama</a></li>
-              <li><a href="about.html" class="active">Tentang</a></li>
-              <li><a href="team.html">Tim</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a class="lang-homeNav" href="#" class="active">Utama</a></li>
+              <li><a class="lang-aboutNav" href="about.html">Tentang</a></li>
+              <li><a class="lang-teamNav" href="team.html">Tim</a></li>
+              <li><a class="lang-portfolioNav" href="portfolio.html">Portfolio</a></li>
             </ul>
           </div>
         </nav>
     </div>
     <ul class="sidenav" id="mobile-nav">
-      <li><a href="#" class="active">Utama</a></li>
-      <li><a href="about.html">Tentang</a></li>
-      <li><a href="team.html">Tim</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a class="lang-homeNav" href="#" class="active">Utama</a></li>
+      <li><a class="lang-aboutNav" href="about.html">Tentang</a></li>
+      <li><a class="lang-teamNav" href="team.html">Tim</a></li>
+      <li><a class="lang-portfolioNav" href="portfolio.html">Portfolio</a></li>
     </ul>
     <div class="jumbotron">
       <div class="element"></div>
       <div class="container">
         <h1 class="slogan">Trust & <br> <span class="light-green-text text-darken-3">Knowledge</span> </h1>
-        <p class="aboutDesc white-text">
+        <p class="aboutDesc white-text lang-descJumb">
           PT. Kayusoja Reksa Prima didirikan untuk melembagakan kiprah para insinyur
           yang memiliki kompetensi sebagai tenaga ahli jasa konsultansi kedalam
           sebuah institusi bisnis.
         </p>
-        <a href="about.html" class="waves-effect waves-light btn btn-primary light-green darken-1">Lihat Detail</a>
+        <a href="about.html" class="waves-effect waves-light btn btn-primary light-green darken-1 lang-linkJumb">Lihat Detail</a>
       </div>
     </div>
   </div>
@@ -66,7 +64,8 @@
       function getLanguage() {
         (localStorage.getItem('language') == null) ? setLanguage('eng') : false;
         $.ajax({ 
-          url:  '/Statis-PTKayusoja/js/' +  localStorage.getItem('language') + '.json', 
+          // url:  '/Statis-PTKayusoja/js/' +  localStorage.getItem('language') + '.json', 
+          url:  '/js/' +  localStorage.getItem('language') + '.json', 
           dataType: 'json', async: false, dataType: 'json', 
 
           success: function (lang) { 
@@ -78,9 +77,25 @@
       function setLanguage(lang) {
         localStorage.setItem('language', lang);
         getLanguage()
-        $('#homeNav').text(language.home);
+        if(lang == 'ina'){
+          $("#toEng").removeClass('active')
+          $("#toIna").addClass('active')
+        }else if(lang == 'eng'){
+          $("#toIna").removeClass('active')
+          $("#toEng").addClass('active')
+        }
+        // Navbar
+        $('.lang-homeNav').text(language.navbar.home);
+        $('.lang-aboutNav').text(language.navbar.about);
+        $('.lang-teamNav').text(language.navbar.team);
+        $('.lang-portfolioNav').text(language.navbar.portfolio);
+        $('.lang-descJumb').text(language.jumbotron1.desc);
+        $('.lang-linkJumb').text(language.jumbotron1.link);
       }
-      </script>
+    $(document).ready(function(){
+      setLanguage('ina');
+    })
+    </script>
     <script>
       function onReady(callback) {
         var intervalId = window.setInterval(function() {

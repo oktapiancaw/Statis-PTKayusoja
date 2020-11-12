@@ -22,67 +22,78 @@
             <a href="#!" class="brand-logo"><img src="img/icon/logo-icon.png" alt=""><h5 class="light-green-text text-darken-4">PT KAYUSOJA REKSA PRIMA</h5></a>
             <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i class='bx bx-menu-alt-right'></i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="index.html">Utama</a></li>
-              <li><a href="about.html" class="active">Tentang</a></li>
-              <li><a href="#">Tim</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a class="lang-homeNav" href="index.html">Utama</a></li>
+              <li><a class="lang-aboutNav" href="about.html" class="active">Tentang</a></li>
+              <li><a class="lang-teamNav" href="#">Tim</a></li>
+              <li><a class="lang-portfolioNav" href="portfolio.html">Portfolio</a></li>
             </ul>
           </div>
         </nav>
     </div>
     <ul class="sidenav" id="mobile-nav">
-      <li><a href="index.html">Utama</a></li>
-      <li><a href="about.html">Tentang</a></li>
-      <li><a href="#" class="active">Tim</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a class="lang-homeNav" href="index.html">Utama</a></li>
+      <li><a class="lang-aboutNav" href="about.html" class="active">Tentang</a></li>
+      <li><a class="lang-teamNav" href="#">Tim</a></li>
+      <li><a class="lang-portfolioNav" href="portfolio.html">Portfolio</a></li>
     </ul>
     <div class="jumbotron2">
       <div class="element"></div>
       <div class="container">
         <div class="row">
-          <h3 class="center white-text">Team Kami</h3>
+          <h3 class="center white-text lang-titleJumb">Team Kami</h3>
           <div class="col" style="width: 100%;">
             <div class="carousel">
               <div class="carousel-item center">
                 <img src="img/assets/default.png" alt="">
                 <div class="element"></div>
                 <h6>Ir., Yudi Rismayadi, M.Si., IPU.</h6>
-                <p>Direktur Utama</p>
+                <p class="lang-tier1Team">Direktur Utama</p>
               </div>
               <div class="carousel-item center">
                 <img src="img/assets/default.png" alt="">
                 <div class="element"></div>
                 <h6>Yeyet Hendayati, S.Hut.</h6>
-                <p>General Manager</p>
+                <p class="lang-tier2Team">General Manager</p>
               </div>
               <div class="carousel-item center">
                 <img src="img/assets/default.png" alt="">
                 <div class="element"></div>
                 <h6>Hestuti, S.E., M.Si., AK. </h6>
-                <p>Bag. Administrasi & Keuangan</p>
+                <p class="lang-tier3Team">Bag. Administrasi & Keuangan</p>
               </div>
               <div class="carousel-item center">
                 <img src="img/assets/default.png" alt="">
                 <div class="element"></div>
                 <h6>M. Rizal Nurul, A.Md.</h6>
-                <p>Bag. Umum</p>
+                <p class="lang-tier4Team">Bag. Umum</p>
               </div>
               <div class="carousel-item center">
                 <img src="img/assets/default.png" alt="">
                 <div class="element"></div>
                 <h6>DR., Ir., Sopandi Sunarya, IPM</h6>
-                <p>Direktur Teknis dan Mutu</p>
+                <p class="lang-tier5Team">Direktur Teknis dan Mutu</p>
+              </div>
+              <div class="carousel-item center">
+                <img src="img/assets/default.png" alt="">
+                <div class="element"></div>
+                <h6>Ir., Aji Ginanjar R.</h6>
+                <p class="lang-tier6Team">Direktur Marketing</p>
               </div>
               <div class="carousel-item center">
                 <img src="img/assets/default.png" alt="">
                 <div class="element"></div>
                 <h6>Hasbul Efendi, S.P.</h6>
-                <p>Manager Marketing</p>
+                <p class="lang-tier7Team">Manager Marketing</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div id="langbox">
+      <span>
+        <a href="#" id="toIna" class="active" onclick="setLanguage('ina')">INA</a>|<a href="#" id="toEng" onclick="setLanguage('eng')">ENG</a>
+      </span>
     </div>
   </div>
     <div id="loading">
@@ -94,6 +105,50 @@
     </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      var language; 
+      function getLanguage() {
+        (localStorage.getItem('language') == null) ? setLanguage('eng') : false;
+        $.ajax({ 
+          // url:  '/Statis-PTKayusoja/js/' +  localStorage.getItem('language') + '.json', 
+          url:  '/js/' +  localStorage.getItem('language') + '.json', 
+          dataType: 'json', async: false, dataType: 'json', 
+
+          success: function (lang) { 
+            language = lang 
+          } 
+        });
+        }
+      
+      function setLanguage(lang) {
+        localStorage.setItem('language', lang);
+        getLanguage()
+        if(lang == 'ina'){
+          $("#toEng").removeClass('active')
+          $("#toIna").addClass('active')
+        }else if(lang == 'eng'){
+          $("#toIna").removeClass('active')
+          $("#toEng").addClass('active')
+        }
+        // Navbar
+        $('.lang-homeNav').text(language.navbar.home);
+        $('.lang-aboutNav').text(language.navbar.about);
+        $('.lang-teamNav').text(language.navbar.team);
+        $('.lang-tier1Team').text(language.team.tier1);
+        $('.lang-tier2Team').text(language.team.tier2);
+        $('.lang-tier3Team').text(language.team.tier3);
+        $('.lang-tier4Team').text(language.team.tier4);
+        $('.lang-tier5Team').text(language.team.tier5);
+        $('.lang-tier6Team').text(language.team.tier6);
+        $('.lang-tier7Team').text(language.team.tier7);
+        $('.lang-portfolioNav').text(language.navbar.portfolio);
+        $('.lang-titleJumb').text(language.jumbotron3.title);
+      }
+      $(document).ready(function(){
+        setLanguage('ina');
+      })
+    </script>
     <script>
         function onReady(callback) {
         var intervalId = window.setInterval(function() {

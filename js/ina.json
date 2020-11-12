@@ -1,6 +1,85 @@
 {
+    "navbar" : {
+
         "home": "Utama",
         "about": "Tentang",
         "team": "Tim",
         "portfolio": "Portfolio"
+    },
+    "jumbotron1": {
+        "desc": "PT. Kayusoja Reksa Prima didirikan untuk melembagakan kiprah para insinyur yang memiliki kompetensi sebagai tenaga ahli jasa konsultansi kedalam sebuah institusi bisnis.",
+        "link": "Lihat Detail"
+    },
+    "jumbotron2":{
+        "title": "Tentang Kami",
+        "desc": "PT. Kayusoja Reksa Prima didirikan untuk melembagakan kiprah para insinyur yang memiliki kompetensi <br> sebagai tenaga ahli jasa konsultansi kedalam sebuah institusi bisnis.",
+        "link": "Tim Kami"
+    },
+    "jumbotron3":{
+        "title": "Tim Kami"
+    },
+    "jumbotron4":{
+        "title": "Keahlian Kami"
+    },
+    "about":{
+        "title": "Tentang Kami",
+        "desc1": "  PT. Kayusoja Reksa Prima didirikan untuk melembagakan kiprah para insinyur yang memi l iki kompetensi sebagai tenaga ahli jasa konsultansi kedalam sebuah institusi bisnis. PT. Kayusoja Reksa Prima lahir pada Bulan Maret Tahun 2014 berdasarkan Akta Notaris Yuyun Yullianty, SH., M.Kn, Tanggal 12 Maret 2014 No 3. Perusahaan ini dimiliki oleh Ir. Asep Heri Riswandi, Dr., Ir., Sopandi Sunarya, IPM., Yudi Rismayadi, Ir., MSi., IPU., dan Ahmad Kamil.",
+        "desc2": "  Dengan niat dan tekad yang kuat diimbangi oleh kompetensi yang dimiliki maka PT.Kayusoja Reksa Prima diyakini akan mampu tumbuh, berkembang dan berkelanjutan dalam memberikan layanan jasa konsultansi yang bermutu bagi pembangunan berkelanjutan."
+    },
+    "goal":{
+        "title1": "Visi",
+        "title2": "Misi",
+        "desc1": "Menjadi perusahaan terunggul berbasis kepercayaan, ilmu pengetahuan dan teknologi layanan konsultansi untuk pembangunan berkelanjutan.",
+        "desc2": "Menghasilkan karya dan solusi terbaik bagi para mitra. <br><br> Memberi kan kontribusi yang bermanfaat dalam pembangunan sektor pertanian, kehutanan, kelautan perikanan, lingkungan hidup, tata ruang dan energi untuk pembangunan berkelanjutan"
+    },
+    "service": {
+        "title1" : "Bermutu Tinggi",
+        "title2" : "Berkomitmen",
+        "title3" : "Berinovasi",
+        "title4" : "Saling Menghargai",
+        "title5" : "Selalu Bekerjasama",
+        "desc1" : "Menciptakan karya terbaik dalam menunjang pembangunan berkelanjutan sehingga memberikan kepuasan bagi para mitra dan masyarakat luas pada umumnya.",
+        "desc2" : "Mencurahkan segenap daya upaya dan pemikiran untuk menyelesaikn tugas secara tepat waktu, bertanggung jawab, dan bermutu.",
+        "desc3" : "menemukan yang terbaik disetiap pekerjaan menjadi tantangan yang selalu kami hadapi, dengan kompetensi yang dimiliki selalu berkeyakinan menghasilkan yang terbaik.",
+        "desc4" : "Peduli terhadap diri, team, masyarakat dan lingkungan menjadi salah satu motifasi kami dalam memberikan pelayanan jasa konsultansi.",
+        "desc5" : "Membangun kemajuan bersama."
+    },
+    "team": {
+        "tier1": "Direktur Utama",
+        "tier2": "Manajer Utama",
+        "tier3": "Manajer Administrasi & Keuangan",
+        "tier4": "Manajer Umum",
+        "tier5": "Direktur Teknis dan Mutu",
+        "tier6": "Direktur Marketing",
+        "tier7": "Manajer Marketing"
+    },
+    "skill":{
+        "title1": "Pertanian dan Kehutanan",
+        "title2": "Ekonomi dan Manajemen",
+        "title3": "Survey dan Pemetaan",
+        "title4": "Studi Lingkungan",
+        "title5": "Kelautan dan Perikanan",
+        "desc1": "Pengembangan Kawasan Minapolitan, Penyusunan Zonasi Wilayah Pesisir dan Pulau-Pulau Kecil, Mitigasi Pencemaran Laut.",
+        "desc2": "Monitoring Kualitas Lingkungan, Mitigasi Perubahan Iklim dan Pencemaran, Kajian Kerusakan Sumber Daya Alam Akibat Produksi Biomassa.",
+        "desc3": "Pengembangan Aplikasi GIS dalam Perencanaan dan Tata Ruang, Pemetaan Pesawat Tanpa Awak (Drone).",
+        "desc4": "Implementasi Sistem Manajemen Mutu, Survey Kepuasan Pelanggan, Analisis Kelayakan Finansial, Analisis Tata Niaga.",
+        "desc5": "Kajian Pengembangan Infrastruktur Pertanian, Kajian dan Penerapan Sistem Konservasi Tanah dan Air, Pengembangan dan Pemberdayaan Petani.",
+        "list1": "<li> Pengembangan Kawasan Minapolitan. </li> <li> Penyusunan Zonasi Wilayah Pesisir dan Pulau-Pulau Kecil. </li> <li> Mitigasi Pencemaran Laut. </li> <li> Inventarisasi Potensi Pesisir dan PulauPulau Kecil. < / li> <li> Konservasi Ekosistem Mangrove, Terumbu Karang, dan Padang Lamun. </li> <li> Analisis Kelayakan Proyek Kelautan dan Perikanan. </li> <li> Pemberdayaan Nelayan dan Masyarakat Pesisir. </li>",
+        "list2": "<li> Pemantauan Kualitas Lingkungan. </li> <li> Mitigasi Perubahan Iklim dan Pencemaran. </li> <li> Kajian Kerusakan Sumber Daya Alam Akibat Produksi Biomassa. </li> <li> Konservasi Keanakeragaman Hayati. </ li > <li> Penilaian Jasa Lingkungan. </li> <li> Perencanaan Ruang Terbuka Hijau. </li> <li> Kajian Daya Dukung dan Daya Tampung Lingkungan Hidup. </li> <li> Kajian Lingkungan Hidup Strategis. </ li>",
+        "list3": "<li> Pengembangan Aplikasi GIS dalam Perencanaan dan Tata Ruang. </li> <li> Pemetaan Pesawat Tanpa Awak (Drone). </li> <li> Survey, Investigasi dan Desain Pengelolaan Sumber Daya Alam. </li> <li > Interpretasi Citra Satelit alam Pengelolaan Sumberdaya. </li>",
+        "list4": "<li> Implementasi Sistem Manajemen Mutu. </li> <li> Survey Kepuasan Pelanggan </li> <li> Analisis Kelayakan Finansial. </li> <li> Analisis Tata Niaga. </li> <li> Pengembangan Klaster Industri. </li>",
+        "list5": "<li> Kajian Pengembangan Infrastruktur Pertanian. </li> <li> Kajian dan Penerapan Sistem Konservasi Tanah dan Air. </li> <li> Pengembangan dan Pemberdayaan Petani. </li> <li> Kajian Produksi dan Pemasaran Komoditas Pertanian. </li> <li> Pengembangan Mikro Organisme Lokal. </li> <li> Pengendalian Hama Terpadu. </li> <li> Analisis Kelayakan Project Pertanian dan Kehutanan. </li> <li> Rehabilitasi Lahan dan Hutan. < / li> <li> Penyusunan Rancangan Teknis Rehabilitasi DAS dan Bekas Areal Tambang. </li> <li> Pengembangan Hasil Hutan Berbasis Produk Unggulan. </li> <li> Penataan dan Pemetaan Areal Pertanian dan Hutan. </li> < li> Studi Dinamika Karbon dan Perubahan Tutupan Lahan. </li> <li> Pemantauan Kesehatan Hutan. </li>",
+        "link": "Selengkapnya"
+    },
+    "portfolio":{
+        "title": "Portofolio Perusahaan",
+        "list": "<li> Penyusunan Rancangan Teknik Penanaman Dalam Rangka Rehabilitasi Daerah Aliran Sungai. </li> <li> Desain Tapak Kawasan Konservasi Taman Hutan Raya Gunung Kunci Palasari. </li> <li> Masterplan Penyusunan Kawasan Minapolitan. </li> <li> Kajian Teknis Unit Pengolahan Hasil Hutan Cirebon. </li> <li> Implementasi ISO / IEC 17025-2017 dan Persiapan Akreditasi Dinas Lingkungan Hidup Kab. Garut. </li> <li> Identikasi dan Rona Awal Perhitungan Karbon (REDD +) Dengan Fokus Pada Area Program Hutan II Site 2 Pada Balai Pengelolaan DASHL Batanghari Jambi. </li> <li> Pengawasan dan Penilaian (WASLAI) Pelaksanaan Pekerjaan Rehabilitasi Hutan (RHL) Meliputi pembuatan Agroforestri dan Reboisasi Tahun Pertama (PO) Tahun Kedua (P1) dan Tahun ketiga (P2) Tahun 2019 Dalam Rangka Pelaksanaan Program Hutan II ( REDD +). </li> <li> Perancangan Dampak Perubahan Iklim Dan Bahan Tercemar Terhadap Kelestarian Pulau-Pulau Kecil. </li> <li> Rencana Induk Pengelolaan Keanekaragaman Hayati. </li> <li> Kajian Daya Dukung Daya Tampung. </li> <li> Perancangan Pemulihan Ekosistem Padang Lamun Pada Kawasan Konservasi Perairan Kabupaten Indramayu Berbasis Teknologi Transplantasi. </li>"
+    },
+    "footer": {
+        "loc": "Lokasi",
+        "locdesc": "Buah Batu Commercial Area (BBCA) Jl. Terusan Buah Batu Kota Bandung",
+        "act": "Kegiatan Kami",
+        "cont": "Kontak Kami"
+    }
+
 }

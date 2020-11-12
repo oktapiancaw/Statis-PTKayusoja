@@ -1,6 +1,83 @@
 { 
+    "navbar": {
         "home": "Home",
         "about": "About",
         "team": "Team",
         "portfolio": "Portfolio"
+    },
+    "jumbotron1": {
+        "desc": "PT. Kayusoja Reksa Prima was founded to institutionalize the work of engineers who have competence as consultancy service experts into a business institution.",
+        "link": "See Detail"
+    },
+    "jumbotron2":{
+        "title": "About Us",
+        "desc": "PT. Kayusoja Reksa Prima was established to institutionalize the progress of engineers who have competence as experts in consulting services into a business institution.",
+        "link": "Our Team"
+    },
+    "jumbotron3":{
+        "title": "Our Team"
+    },
+    "jumbotron4":{
+        "title": "Our Skill"
+    },
+    "about":{
+        "title": "About Us",
+        "desc1": "  PT. Kayusoja Reksa Prima was established to institutionalize the work of engineers who have competence as consulting services experts into a business institution. PT. Kayusoja Reksa Prima was born in March 2014 based on the Notary Deed of Yuyun Yullianty, SH., M.Kn, dated March 12, 2014 No. 3. This company is owned by Ir. Asep Heri Riswandi, Dr., Ir., Sopandi Sunarya, IPM., Yudi Rismayadi, Ir., MSi., IPU., And Ahmad Kamil.",
+        "desc2": "  With strong intentions and determination balanced with competencies, PT. Kayusoja Reksa Prima is believed to be able to grow, develop and sustainably in providing quality consulting services for sustainable development."
+    },
+    "goal":{
+        "title1": "Vision",
+        "title2": "Mission",
+        "desc1": "To be the leading company based on trust, science and technology consulting services for sustainable development.",
+        "desc2": "Produce the best work and solutions for partners. <br> <br> Give a useful contribution in the development of the agricultural, forestry, marine fisheries, environment, spatial planning and energy sectors for sustainable development"
+    },
+    "team": {
+        "tier1": "President Director",
+        "tier2": "Genaral Manager",
+        "tier3": "Administration & Finance Manager",
+        "tier4": "General Department Manager",
+        "tier5": "Technical and Quality Director",
+        "tier6": "Marketing Director",
+        "tier7": "Marketing Manager"
+    },
+    "service": {
+        "title1" : "Excellent",
+        "title2" : "Commitment",
+        "title3" : "Innovation",
+        "title4" : "Respect",
+        "title5" : "Teamwork",
+        "desc1" : "Creating the best work in supporting sustainable development so as to provide satisfaction for partners and the wider community at large.",
+        "desc2" : "Put forth every effort and mind to complete the task in a timely, responsible and quality manner.",
+        "desc3" : "finding the best in every job is a challenge that we always face, with our competencies always believing to produce the best.",
+        "desc4" : "Caring for ourselves, the team, the community and the environment is one of our motivations in providing consulting services.",
+        "desc5" : "Build progress together."
+    },
+    "skill":{
+        "title1": "Agriculture and Forestry",
+        "title2": "Economics and Management",
+        "title3": "Survey and Mapping",
+        "title4": "Environmental Studies",
+        "title5": "Marine and Fisheries",
+        "desc1": "Development of Minapolitan Areas, Zoning of Coastal Areas and Small Islands, Mitigation of Marine Pollution.",
+        "desc2": "Environmental Quality Monitoring, Mitigation of Climate Change and Pollution, Study of Damage to Natural Resources Resulting in Biomass Production.",
+        "desc3": "Development of GIS Applications in Planning and Spatial Planning, Mapping of Unmanned Aircraft (Drone).",
+        "desc4": "Quality Management System Implementation, Customer Satisfaction Survey, Financial Feasibility Analysis, Commercial Administration Analysis.",
+        "desc5": "Agricultural Infrastructure Development Studies, Study and Application of Soil and Water Conservation Systems, Development and Empowerment of Farmers",
+        "list1": "<li> Development of Minapolitan Areas. </li> <li> Zoning of Coastal Areas and Small Islands. </li> <li> Mitigation of Marine Pollution. </li> <li> Inventory of Potential Coastal and Small Islands. < / li> <li> Conservation of Mangrove, Coral Reef, and Seagrass Ecosystems </li> <li> Feasibility Analysis for Marine and Fisheries Projects. </li> <li> Empowerment of Fishermen and Coastal Communities. </li>",
+        "list2": "<li> Environmental Quality Monitoring. </li> <li> Mitigation of Climate Change and Pollution. </li> <li> Assessment of Damage to Natural Resources Due to Biomass Production. </li> <li> Conservation of Biodiversity. </ li > <li> Environmental Services Assessment. </li> <li> Green Open Space Planning. </li> <li> Environmental Support and Capacity Study. </li> <li> Strategic Environmental Assessment. </ li>",
+        "list3": "<li> GIS Application Development in Planning and Spatial Planning. </li> <li> Mapping of Unmanned Aircraft (Drone). </li> <li> Survey, Investigation and Natural Resources Management Design. </li> <li > Resource Management Natural Satellite Image Interpretation. </li>",
+        "list4": "<li> Quality Management System Implementation. </li> <li> Customer Satisfaction Survey. </li> <li> Financial Feasibility Analysis. </li> <li> Business Administration Analysis. </li> <li> Cluster Development Industry. </li>",
+        "list5": "<li> Agricultural Infrastructure Development Study. </li> <li> Study and Application of Soil and Water Conservation Systems. </li> <li> Farmer Development and Empowerment. </li> <li> Study of Production and Marketing of Agricultural Commodities. </li> <li> Development of Local Micro Organisms. </li> <li> Integrated Pest Management. </li> <li> Feasibility Analysis of the Agriculture and Forestry Project. </li> <li> Land and Forest Rehabilitation. </ li> <li> Preparation of Technical Design for the Rehabilitation of Watershed and Ex-Mining Areas. </li> <li> Forest Products Development Based on Leading Products. </li> <li> Arrangement and mapping of agricultural and forest areas. </li> <li> Study of Carbon Dynamics and Land Cover Change. </li> <li> Forest Health Monitoring. </li>",
+        "link": "See More"
+    },
+    "portfolio":{
+        "title": "Portofolio Perusahaan",
+        "list": "<li> Arrangement of Planting Technique Design for Watershed Rehabilitation. </li> <li> Site Design of the Gunung Kunci Palasari Grand Forest Park Conservation Area. </li> <li> Preparation of Master Plan for Minapolitan Areas. </li> <li> Technical Study of Cirebon Forest Products Processing Unit. </li> <li> Implementation of ISO / IEC 17025-2017 and Preparation for Accreditation at the Environmental Service Office of Kab. Garut. </li> <li> Identification and Baseline Calculation of Carbon (REDD +) with a Focus on the Forest Program II Site Area 2 at the Batanghari Jambi DASHL Management Center. </li> <li> Supervision and Assessment (WASLAI) Implementation of Forest Rehabilitation Works (RHL) Includes the creation of Agroforestry and Reforestation in the First Year (P1) and Third Year (P2) of 2019 in the Context of Forest Program II Implementation ( REDD +). </li> <li> Designing the Impact of Climate Change and Polluted Materials on the Conservation of Small Islands. </li> <li> Master Plan for Biodiversity Management. </li> <li> Carrying Capacity Study. </li> <li> The Design of Seagrass Ecosystem Restoration in the Marine Protected Area of ​​Indramayu Regency Based on Transplant Technology </li>"
+    },
+    "footer": {
+        "loc": "Location",
+        "locdesc": "Buah Batu Commercial Area (BBCA) Jl. Terusan Buah Batu, Bandung, Indonesia",
+        "act": "Our Activity",
+        "cont": "Contact Us"
+    }
 }
