@@ -252,8 +252,7 @@
     function getLanguage() {
       (localStorage.getItem('language') == null) ? setLanguage('eng') : false;
       $.ajax({ 
-        // url:  '/Statis-PTKayusoja/js/' +  localStorage.getItem('language') + '.json', 
-        url:  '/js/' +  localStorage.getItem('language') + '.json', 
+          url:  '/Statis-PTKayusoja/js/' +  localStorage.getItem('language') + '.json', 
         dataType: 'json', async: false, dataType: 'json', 
 
         success: function (lang) { 
